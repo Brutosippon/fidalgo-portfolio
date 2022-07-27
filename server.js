@@ -1,3 +1,15 @@
+
+/* Configurar portas para heroku
+const express = require('express');
+const apps = express();
+const path = require('path');
+const port = process.env.PORT || 5000 || 3000;
+apps.listen(port, (err) =>{
+  if (err) return console.log(err);
+  console.log('Server running on port: ', port)
+}) 
+*/
+
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
@@ -5,6 +17,18 @@ const nodemailer = require("nodemailer");
 
 // server used to send send emails
 const app = express();
+const path = require('path');
+const port = process.env.PORT || 5000 || 3000;
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static('build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+  } // end get
+  
+app.listen(port, (err) =>{
+  if (err) return console.log(err);
+  console.log('Server running on port: ', port)
+})
 app.use(cors());
 app.use(express.json());
 app.use("/", router);

@@ -8,6 +8,7 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
+/*componentes da ASP*/
 function App() {
   return (
     <div className="App">
