@@ -1,6 +1,6 @@
-import meter1 from "../assets/img/meter1.svg";
+/*import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter3 from "../assets/img/meter3.svg";*/
 
 import porcento25 from "../assets/img/25porcento.svg";
 import porcento35 from "../assets/img/35porcento.svg";
@@ -9,8 +9,8 @@ import porcento10 from "../assets/img/10porcento.svg";
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+/*import arrow1 from "../assets/img/arrow1.svg";
+import arrow2 from "../assets/img/arrow2.svg";*/
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
