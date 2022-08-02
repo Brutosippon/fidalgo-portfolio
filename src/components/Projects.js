@@ -78,6 +78,7 @@ export const Projects = () => {
                                 key={index}
                                 {...project}
                                 />
+                                
                             )
                           })
                         }
