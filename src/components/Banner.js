@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Gestor", "Financeiro", "Judoca" ];
+  const toRotate = [ "Financial Data Analyst", "Developer", "Judoka" ];
   const period = 1500;
 
   useEffect(() => {
@@ -55,10 +55,25 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Bem-vindos ao meu portfólio!</span>
-                <h1>{`Ola! Sou João Fidalgo,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Gestor", "Financeiro", "Judoca" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Atualmente (2021,2022), sou técnico superior do Gabinete de Supervisão de Seguros e Fundos de Pensões e de Gestão do Fundo de Garantia Automóvel (GSF) no Banco de Cabo Verde, organismo que supervisiona a atividade seguradora em Cabo Verde.</p>
-                  {/*<button onClick={() => console.log('connect')}>Entre em contacto <ArrowRightCircle size={15} /></button>*/}
+                <span className="tagline">Welcome to my portfolio!</span>
+                <h1>{`Hello! I'm João Fidalgo, `} 
+                  <span 
+                    className="txt-rotate" 
+                    dataPeriod="1000" 
+                    data-rotate='[ "Financial Data Analyst", "Developer", "Judoka" ]'
+                  >
+                    <span className="wrap">{text}</span>
+                  </span>
+                </h1>
+                <p>
+                  I am currently working as a Senior Data Analyst & Developer at BNP Paribas Cardif. 
+                  With over 10 years of cross-functional experience in Banking, Insurance, 
+                  and Risk Management, I specialize in building data-driven solutions for 
+                  regulatory reporting, IFRS17 implementation, and advanced analytics. 
+                  Skilled in Python, SQL, and Power BI, I enjoy pushing the boundaries 
+                  of innovation to deliver impactful insights.
+                </p>
+                {/*<button onClick={() => console.log('connect')}>Get in Touch<ArrowRightCircle size={15} /></button>*/}
               </div>}
             </TrackVisibility>
           </Col>

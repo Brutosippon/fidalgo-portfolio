@@ -41,19 +41,19 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>A métrica de avaliação das skills tem em conta o tempo dedicado a cada uma das habilidades ao longo dos últimos 10 anos. Assim sendo o somatório das percentagens deve ser igual a 100%.<br></br></p>
+                        <p>The skill evaluation metric is based on the time dedicated to each skill over the last 10 years. Therefore, the sum of the percentages must be equal to 100%.<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={porcento35} alt="Image" />
-                                <h5>Risk Managment</h5>
+                                <h5>Data Analyst</h5>
                             </div>
                             <div className="item">
                                 <img src={porcento25} alt="Image" />
-                                <h5>Business Analyst</h5>
+                                <h5>Risk Management</h5>
                             </div>
                             <div className="item">
                                 <img src={porcento30} alt="Image" />
-                                <h5>Office script/Excel/Power BI </h5>
+                                <h5>Power-BI/Python/SQL/Excel </h5>
                             </div>
                             <div className="item">
                                 <img src={porcento10} alt="Image" />

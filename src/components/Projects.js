@@ -15,16 +15,19 @@ export const Projects = () => {
   const projects = [
     {
       title: "Ler & Aprender",
+      subtitle: "(Read & Learn)",
       description: "YouTube",
       imgUrl: projImg1,
     },
     {
       title: "Desenvolva a sua Mente",
+      subtitle:"(Develop Your Mind)",
       description: "YouTube",
       imgUrl: projImg2,
     },
     {
       title: "10 mil Horas de Dedicação",
+      subtitle: "(10k Hours of Dedication)",
       description: "YouTube",
       imgUrl: projImg3,
     },
@@ -35,11 +38,13 @@ export const Projects = () => {
     },
     {
       title: "O GESTOR",
+      subtitle: "(The Manager)",
       description: "YouTube",
       imgUrl: projImg5,
     },
     {
       title: "Começa Hoje",
+      subtitle: "(Start Today)",
       description: "YouTube",
       imgUrl: projImg6,
     },
@@ -53,19 +58,25 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projetos</h2>
-                <p>Licenciado em Gestão/Managment, Mestre em Fiscalidade/Tax Managment.</p>
-                <p>No ano 2021, conclui com aproveitamento a formação em CS50x (Computer Science) ministrada pela CS50 Havard University, onde pude aprender conceitos fundamentais de programação como C++, SQL, Python, JS, etc.</p>
+                <h2>Projects</h2>
+                  <p>
+                    I hold a Bachelor’s in Management, a Master’s in Tax Management, and I completed a Postgraduate 
+                    in Data Science at Nova IMS in 2023.
+                  </p>
+                  <p>
+                    In 2021, I took Harvard’s CS50x (Computer Science), where I gained programming skills in 
+                    C++, SQL, Python, and JS.
+                  </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Hobby</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Destaque 1</Nav.Link>
+                      <Nav.Link eventKey="second">1st Highlight</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Destaque 2</Nav.Link>
+                      <Nav.Link eventKey="third">2nd Highlight</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -85,10 +96,28 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>De 2019 a 2021, fiz parte do Gabinete de Gestão de Risco do Banco Interatlântico (Grupo Caixa Geral de Depósitos), onde pude apoiar a instituição na definição de políticas e orientações gerais em matéria de riscos e de procedimentos necessários ao exercício do respetivo controlo de risco, fui responsável pela elaboração do quadro de apetência pelo risco (RAS-dashboard), abordando em matérias de gestão de risco de liquidez como Liquidity Coverage Ratio (LCR) e Net Stable Funding Ratio (NSFR), risco cambial, risco de mercado e risco de crédito. Fui também membro do Comité de Ativos e Passivos (CAP) do Banco Interatlântico.</p>
+                      <p>
+                        Since January 2024, I have worked as a Senior Data Analyst & Developer at BNP Paribas Cardif, 
+                        overseeing data pipelines, building BI dashboards, automating processes (Python, Office Scripts, VBA, Power Automate), 
+                        and enhancing daily/monthly financial reporting (FPF).
+                      </p>
+                      <p>
+                        Between 2021 and 2023, I served as a Senior Technician – Financial Data Analyst at Banco de Cabo Verde, 
+                        focusing on Insurance Supervision and the Automobile Guarantee Fund. I built Python scripts for monthly reports, 
+                        led compliance checks, created Power BI dashboards, and helped implement Microsoft Dynamics Navision ERP.
+                      </p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Em 2014 enquanto parte do departamento financeiro da “Crédito Agrícola Mútuo-Algarve” desenvolvi competências na área de gestão, através da integração do projeto de informatização da instituição (workflow de crédito).</p>
+                      <p>
+                        From 2019 to 2021, I supported the Risk Management Department at Banco Interatlântico (Group Caixa Geral de Depósitos). 
+                        I developed RAS dashboards, managed liquidity risk (LCR, NSFR), and handled market and credit risk. 
+                        I also served on the Assets and Liabilities Committee (ALCO).
+                      </p>
+                      <p>
+                        In 2014, while working in the Finance Department of Crédito Agrícola Mútuo–Algarve, I enhanced my 
+                        management skills by contributing to the institution’s computerization project (credit workflow), 
+                        digitizing financial processes, and supporting risk modeling.
+                      </p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
@@ -97,7 +126,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="Background Shape"></img>
     </section>
   )
 }
