@@ -15,19 +15,16 @@ export const Projects = () => {
   const projects = [
     {
       title: "Ler & Aprender",
-      subtitle: "(Read & Learn)",
       description: "YouTube",
       imgUrl: projImg1,
     },
     {
       title: "Desenvolva a sua Mente",
-      subtitle:"(Develop Your Mind)",
       description: "YouTube",
       imgUrl: projImg2,
     },
     {
       title: "10 mil Horas de Dedicação",
-      subtitle: "(10k Hours of Dedication)",
       description: "YouTube",
       imgUrl: projImg3,
     },
@@ -38,13 +35,11 @@ export const Projects = () => {
     },
     {
       title: "O GESTOR",
-      subtitle: "(The Manager)",
       description: "YouTube",
       imgUrl: projImg5,
     },
     {
       title: "Começa Hoje",
-      subtitle: "(Start Today)",
       description: "YouTube",
       imgUrl: projImg6,
     },

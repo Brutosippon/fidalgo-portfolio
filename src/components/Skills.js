@@ -53,7 +53,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={porcento30} alt="Image" />
-                                <h5>Power-BI/Python/SQL/Excel </h5>
+                                <h5>PowerBI/Python/SQL/Excel </h5>
                             </div>
                             <div className="item">
                                 <img src={porcento10} alt="Image" />
