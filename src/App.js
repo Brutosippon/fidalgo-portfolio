@@ -10,6 +10,11 @@ import { Footer } from "./components/Footer";
 
 /*componentes da ASP*/
 function App() {
+
+  useEffect(() => {
+    document.title = "Fidalgo";
+  }, []);
+
   return (
     <div className="App">
       <NavBar />
