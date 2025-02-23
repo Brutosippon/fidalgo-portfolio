@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
@@ -10,11 +10,6 @@ import { Footer } from "./components/Footer";
 
 /*componentes da ASP*/
 function App() {
-
-  useEffect(() => {
-    document.title = "Fidalgo";
-  }, []);
-
   return (
     <div className="App">
       <NavBar />
